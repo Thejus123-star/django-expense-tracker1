@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ##README.md
 
@@ -39,3 +40,6 @@ http://127.0.0.1:8000/admin/
 NAME : THEJUS PRASOON
 COLLEGE : VIMAL JYOTHI ENGINEERING COLLEGE
 DEPARTMENT : COMPUTER SCIENCE AND ENGINEERING
+=======
+# django-expense-tracker1
+>>>>>>> 0a13c3947c9b3e59aafa83791d1f0c06c9b4fa19
