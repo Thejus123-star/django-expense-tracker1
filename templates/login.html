@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-900 via-amber-900 to-black">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.18),transparent_60%)]"></div>
+
+  <!-- Card -->
+  <div class="relative w-full max-w-md bg-white/10 backdrop-blur-2xl rounded-3xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)] p-10 border border-yellow-400/30">
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h2 class="text-4xl font-extrabold text-yellow-300 tracking-wide">Welcome Back</h2>
+      <p class="text-yellow-100 text-sm mt-2">
+        Login to track and control your expenses
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form method="post" class="space-y-6">
+      {% csrf_token %}
+
+      <!-- Django form fields -->
+      <div class="space-y-4 text-yellow-100 [&_input]:w-full [&_input]:bg-white/10 [&_input]:rounded-xl 
+                  [&_input]:px-4 [&_input]:py-3 [&_input]:outline-none [&_input]:border 
+                  [&_input]:border-yellow-400/30 focus-within:[&_input]:border-yellow-400 
+                  [&_input]:transition">
+        {{ form.as_p }}
+      </div>
+
+      <!-- Login Button -->
+      <button
+        type="submit"
+        class="w-full mt-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600
+               text-black font-bold tracking-wide
+               transform transition-all duration-300
+               hover:scale-[1.03] hover:shadow-[0_20px_40px_-10px_rgba(250,204,21,0.8)]
+               focus:outline-none focus:ring-4 focus:ring-yellow-400/50">
+        Sign In
+      </button>
+    </form>
+
+    <!-- Divider -->
+    <div class="flex items-center my-8">
+      <div class="flex-grow h-px bg-yellow-400/30"></div>
+      <span class="px-4 text-sm text-yellow-200">OR</span>
+      <div class="flex-grow h-px bg-yellow-400/30"></div>
+    </div>
+
+    <!-- Register -->
+    <p class="text-center text-yellow-200 text-sm">
+      Don’t have an account?
+      <a href="/register/"
+         class="text-yellow-300 hover:text-yellow-200 font-semibold transition">
+        Create one
+      </a>
+    </p>
+
+  </div>
+
+</body>
+</html>
