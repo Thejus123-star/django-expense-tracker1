@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-##README.md
 
 Expense Tracker is a web-based application developed using **Django** and **Tailwind CSS**.
 The purpose of this project is to help users manage their daily expenses efficiently through a simple and user-friendly interface. The system allows users to register, log in securely, add new expenses, view their expense history, filter records by category, and track their total spending using a modern dashboard.
@@ -40,6 +38,4 @@ http://127.0.0.1:8000/admin/
 NAME : THEJUS PRASOON
 COLLEGE : VIMAL JYOTHI ENGINEERING COLLEGE
 DEPARTMENT : COMPUTER SCIENCE AND ENGINEERING
-=======
-# django-expense-tracker1
->>>>>>> 0a13c3947c9b3e59aafa83791d1f0c06c9b4fa19
+
